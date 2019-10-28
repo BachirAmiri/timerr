@@ -5,3 +5,8 @@ p {
     width: 100%;
     text-align: center;
 }
+
+::ng-deep svg  {
+    overflow: hidden;
+    height: 50% !important;
+}
