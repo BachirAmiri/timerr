@@ -1,12 +1,31 @@
-
 p {
-    font-size: 3em;
-    color: #565656;
-    width: 100%;
-    text-align: center;
+  font-size: 3em;
+  color: #565656;
+  width: 100%;
+  text-align: center;
 }
 
-::ng-deep svg  {
-    overflow: hidden;
-    height: 50% !important;
+::ng-deep svg {
+  overflow: hidden;
+  height: 50% !important;
+}
+
+#header {
+  margin-bottom: 30px;
+}
+
+#container {
+  text-align: center;
+}
+
+#container p {
+  display: inline;
+}
+
+#hourLabel {
+  color: #bae67e;
+}
+
+#minSecLabel {
+  color: #e5b0ea;
 }
