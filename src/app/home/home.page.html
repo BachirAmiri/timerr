@@ -13,9 +13,13 @@
       [percent]="percent"
       [maxPercent]="101"
       [radius]="radius"
-      [showTitle]="false"
-      [showSubtitle]="false"
-      [showUnits]="false"
+      [unitsColor]="'#C7E596'"
+      [animateTitle]="true"
+      [titleColor]="'#e5b0ea'"
+      [subtitle]="formatSubtitle()"
+      [subtitleFontSize]="20"
+      [showSubtitle]="true"
+      [subtitleColor]="'#C7E596'"
       [outerStrokeWidth]="16"
       [backgroundStrokeWidth]="3"
       [outerStrokeColor]="'#78C000'"
@@ -26,6 +30,8 @@
       [outerStrokeGradient]="true"
     ></circle-progress>
   </div>
+
+  <h4 id="containerTitle">Total time elapsed : </h4>
   <div id="container">
     <p id="hourLabel">
       {{elapsed.h}}

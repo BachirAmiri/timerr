@@ -95,4 +95,16 @@ export class HomePage {
 
     this.insomnia.allowSleepAgain();
   }
+
+  formatSubtitle = () : string => {
+    if(this.percent >= 100){
+      return "Extra time!"
+    }else if(this.percent >= 50){
+      return "Half way"
+    }else if(this.percent > 0){
+      return "GO GO !"
+    }else {
+      return "Not started"
+    }
+  }
 }
